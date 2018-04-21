@@ -1,13 +1,13 @@
 package Days_Of_Code;
 
-import java.util.Scanner;
+import java.util.*;
 
-public class Day21_Generics <T> {
-
+class Printer <T> {
     /**
-     *    Method Name: printArray
-     *    Print each element of the generic array on a new line. Do not return anything.
-     *    A generic array
+     * Method Name: printArray
+     * Print each element of the generic array on a new line. Do not return anything.
+     *
+     * A generic array
      **/
 
     public static <T> void printArray(T[] array) {
@@ -17,7 +17,7 @@ public class Day21_Generics <T> {
     }
 }
 
-public class Generics {
+public class Day21_Generics {
 
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
@@ -33,11 +33,11 @@ public class Generics {
             stringArray[i] = scanner.next();
         }
 
-        Day21_Generics<Integer> intDay21_Generics = new Day21_Generics<Integer>();
-        Day21_Generics<String> stringDay21_Generics = new Day21_Generics<String>();
-        intDay21_Generics.printArray( intArray  );
-        stringDay21_Generics.printArray( stringArray );
-        if(Day21_Generics.class.getDeclaredMethods().length > 1){
+        Printer<Integer> intPrinter = new Printer<Integer>();
+        Printer<String> stringPrinter = new Printer<String>();
+        intPrinter.printArray( intArray  );
+        stringPrinter.printArray( stringArray );
+        if(Printer.class.getDeclaredMethods().length > 1){
             System.out.println("The Printer class should only have 1 method named printArray.");
         }
     }
