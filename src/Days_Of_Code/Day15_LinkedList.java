@@ -3,14 +3,14 @@ package Days_Of_Code;
 import java.io.*;
 import java.util.*;
 
-class Node {
-    int data;
-    Node next;
-    Node(int d) {
-        data = d;
-        next = null;
-    }
-}
+//class Node {
+//    int data;
+//    Node next;
+//    Node(int d) {
+//        data = d;
+//        next = null;
+//    }
+//}
 
 public class Day15_LinkedList {
     public static  Node insert(Node head,int data) {
